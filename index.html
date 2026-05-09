@@ -1,1 +1,10 @@
-<html><body>ok</body></html>
+<html>
+<body>
+  <h2>Код авторизации:</h2>
+  <p id="code"></p>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('code').innerText = params.get('code') || 'Код не найден';
+  </script>
+</body>
+</html>
